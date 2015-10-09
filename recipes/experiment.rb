@@ -2,7 +2,7 @@
 #public_ip = my_public_ip()
 
 script 'run_experiment' do
-  cwd "/home/generator"
+  cwd "/tmp"
    user node['generator']['user']
   group node['generator']['group']
   interpreter "bash"
